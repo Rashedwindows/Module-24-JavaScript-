@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Welcome to my blog website</h1>
+
+    <section>
+        <article>
+            <h2 id="firstheading">My Awsome Blog-1</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla delectus totam obcaecati quisquam deserunt unde pariatur, modi aliquam! Ipsa impedit alias neque. Sit doloribus officia officiis asperiores eius atque impedit?</p>
+        </article>
+    </section>
+    <section>
+       <article>
+            <h2 id="secondheading">My Awsome Blog-2</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla delectus totam obcaecati quisquam deserunt unde pariatur, modi aliquam! Ipsa impedit alias neque. Sit doloribus officia officiis asperiores eius atque impedit?</p>
+       </article>
+    </section>
+    <section>
+    <article>
+            <h2 id="thirdheading">My Awsome Blog-3</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla delectus totam obcaecati quisquam deserunt unde pariatur, modi aliquam! Ipsa impedit alias neque. Sit doloribus officia officiis asperiores eius atque impedit?</p>
+    </article>
+    </section>
+    <section>
+  <article>
+            <h2 id="fourthheading">My Awsome Blog-4</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla delectus totam obcaecati quisquam deserunt unde pariatur, modi aliquam! Ipsa impedit alias neque. Sit doloribus officia officiis asperiores eius atque impedit?</p>
+  </article>
+    </section>
+    <section>
+       <article>
+            <h2 id="fifthheading">My Awsome Blog-5</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla delectus totam obcaecati quisquam deserunt unde pariatur, modi aliquam! Ipsa impedit alias neque. Sit doloribus officia officiis asperiores eius atque impedit?</p>
+       </article>
+    </section>
+    <section>
+ <article>
+            <h2 id="sixthheading">My Awsome Blog-6</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla delectus totam obcaecati quisquam deserunt unde pariatur, modi aliquam! Ipsa impedit alias neque. Sit doloribus officia officiis asperiores eius atque impedit?</p>
+ </article>
+    </section>
+
+
+
+
+
+
+
+    <script>
+        const student ={name : "kissmot Ali", age : 26, gender : "Male"};
+
+        console.log(student)
+        const blogTitle = document.getElementsByTagName('h2');
+
+        console.log(blogTitle);
+
+        for(const h2 of blogTitle){
+
+            console.log(h2)
+        }
+        const blogDetails= document.getElementsByTagName("p");
+        for(const paragraph of blogDetails){
+            console.log(paragraph)
+        }
+
+    //    tag edit without variable
+
+    document.getElementById('firstheading').style.color="green";
+
+    //    tag edit with variable;
+
+    const secondTitle = document.getElementById('secondheading');
+    secondTitle.style.textAlign="center";
+
+    const thirdTitle = document.getElementById("thirdheading");
+    thirdTitle.style.backgroundColor='blue'; thirdTitle.style.color='white';thirdTitle.style.padding='10px';thirdTitle.style.fontSize='35px';
+
+    const fourtTitle = document.getElementById("fourthheading");
+    fourtTitle.style.color='tomato'; fourtTitle.style.textDecoration='underline'; fourtTitle.style.textAlign='right';
+
+    const fiftTitle = document.getElementById("fifthheading");
+    fiftTitle.innerText='This fifth heading change to JavaScript style';
+
+    const sixthTitle = document.getElementById("sixthheading");
+    sixthTitle.style.border='2px solid';  sixthTitle.style.borderColor="tomato";sixthTitle.style.borderRadius='50px';sixthTitle.style.padding='10px';sixthTitle.style.paddingLeft='20px'
+    </script>
+</body>
+</html>
